@@ -3,4 +3,4 @@
 (sections (lib .) (bin ../../bin))
 (files
  (lib (META dune-package opam))
- (bin (OCamlexe insert lasttwo listprimes)))
+ (bin (OCamlexe insert lasttwo listprimes permutation)))

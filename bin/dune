@@ -1,4 +1,4 @@
 (executables
-  (public_names OCamlexe lasttwo insert listprimes)
-  (names main lasttwo insert listprimes)
+  (public_names OCamlexe lasttwo insert listprimes permutation)
+  (names main lasttwo insert listprimes permutation)
   (libraries OCamlexe))

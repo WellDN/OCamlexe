@@ -27,6 +27,9 @@ module Modified_length_encoding = Dune__exe__Modified_length_encoding
 (** @canonical Dune__exe.Palindrome *)
 module Palindrome = Dune__exe__Palindrome
 
+(** @canonical Dune__exe.Permutation *)
+module Permutation = Dune__exe__Permutation
+
 (** @canonical Dune__exe.Remove *)
 module Remove = Dune__exe__Remove
 
