@@ -3,7 +3,7 @@
 # Shared cache: disabled
 # Workspace root: /home/w/d/OCamlexe
 # Auto-detected concurrency: 8
-$ /home/w/.opam/4.14.0/bin/ocamlc.opt -config > /tmp/dune_c2541b_output
+$ /home/w/.opam/4.14.0/bin/ocamlc.opt -config > /tmp/dune_565a4c_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -107,51 +107,27 @@ $ /home/w/.opam/4.14.0/bin/ocamlc.opt -config > /tmp/dune_c2541b_output
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I exercises/8-modified-length-encoding/.main.eobjs/byte -I lib/.OCamlexe.objs/byte -no-alias-deps -opaque -o exercises/8-modified-length-encoding/.main.eobjs/byte/dune__exe__Main.cmi -c -intf exercises/8-modified-length-encoding/main.mli)
-$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I exercises/9-duplicate-elements-of-a-list/.main.eobjs/byte -I lib/.OCamlexe.objs/byte -no-alias-deps -opaque -o exercises/9-duplicate-elements-of-a-list/.main.eobjs/byte/dune__exe__Main.cmi -c -intf exercises/9-duplicate-elements-of-a-list/main.mli)
-$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I exercises/7-run-length-encoding/.main.eobjs/byte -I lib/.OCamlexe.objs/byte -no-alias-deps -opaque -o exercises/7-run-length-encoding/.main.eobjs/byte/dune__exe__Main.cmi -c -intf exercises/7-run-length-encoding/main.mli)
-$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I exercises/6-palindrome/.main.eobjs/byte -I lib/.OCamlexe.objs/byte -no-alias-deps -opaque -o exercises/6-palindrome/.main.eobjs/byte/dune__exe__Main.cmi -c -intf exercises/6-palindrome/main.mli)
-$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I exercises/9-duplicate-elements-of-a-list/.main.eobjs/byte -I exercises/9-duplicate-elements-of-a-list/.main.eobjs/native -I lib/.OCamlexe.objs/byte -I lib/.OCamlexe.objs/native -intf-suffix .ml -no-alias-deps -opaque -o exercises/9-duplicate-elements-of-a-list/.main.eobjs/native/dune__exe__Main.cmx -c -impl exercises/9-duplicate-elements-of-a-list/main.ml)
-$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I exercises/6-palindrome/.main.eobjs/byte -I exercises/6-palindrome/.main.eobjs/native -I lib/.OCamlexe.objs/byte -I lib/.OCamlexe.objs/native -intf-suffix .ml -no-alias-deps -opaque -o exercises/6-palindrome/.main.eobjs/native/dune__exe__Main.cmx -c -impl exercises/6-palindrome/main.ml)
-> File "exercises/6-palindrome/main.ml", line 1, characters 4-17:
-> 1 | let is_palindrome list =
->         ^^^^^^^^^^^^^
-> Error (warning 32 [unused-value-declaration]): unused value is_palindrome.
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamldep.opt -modules -impl bin/listprimes.ml) > _build/default/bin/.main.eobjs/dune__exe__Listprimes.impl.d
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I bin/.main.eobjs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe.cmo -c -impl bin/.main.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamldep.opt -modules -intf bin/listprimes.mli) > _build/default/bin/.main.eobjs/dune__exe__Listprimes.intf.d
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe.cmx -c -impl bin/.main.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I lib/.OCamlexe.objs/byte -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/byte/dune__exe__Insert.cmi -c -intf bin/insert.mli)
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I lib/.OCamlexe.objs/byte -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/byte/dune__exe__Lasttwo.cmi -c -intf bin/lasttwo.mli)
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I lib/.OCamlexe.objs/byte -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I lib/.OCamlexe.objs/byte -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/byte/dune__exe__Listprimes.cmi -c -intf bin/listprimes.mli)
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.OCamlexe.objs/byte -I lib/.OCamlexe.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Lasttwo.cmx -c -impl bin/lasttwo.ml)
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.OCamlexe.objs/byte -I lib/.OCamlexe.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Insert.cmx -c -impl bin/insert.ml)
+> File "bin/insert.ml", line 1, characters 8-17:
+> 1 | let rec insert_at x n = function
+>             ^^^^^^^^^
+> Error (warning 32 [unused-value-declaration]): unused value insert_at.
 [2]
-$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I exercises/1-tail-of-a-list/.main.eobjs/byte -I exercises/1-tail-of-a-list/.main.eobjs/native -I lib/.OCamlexe.objs/byte -I lib/.OCamlexe.objs/native -intf-suffix .ml -no-alias-deps -opaque -o exercises/1-tail-of-a-list/.main.eobjs/native/dune__exe__Main.cmx -c -impl exercises/1-tail-of-a-list/main.ml)
-> File "exercises/1-tail-of-a-list/main.ml", line 1, characters 8-12:
-> 1 | let rec last = function
->             ^^^^
-> Error (warning 32 [unused-value-declaration]): unused value last.
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.OCamlexe.objs/byte -I lib/.OCamlexe.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.OCamlexe.objs/byte -I lib/.OCamlexe.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Listprimes.cmx -c -impl bin/listprimes.ml)
+> File "bin/listprimes.ml", line 9, characters 8-17:
+> 9 | let rec max_prime a b =
+>             ^^^^^^^^^
+> Error (warning 32 [unused-value-declaration]): unused value max_prime.
 [2]
-$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I exercises/4-length-list/.main.eobjs/byte -I exercises/4-length-list/.main.eobjs/native -I lib/.OCamlexe.objs/byte -I lib/.OCamlexe.objs/native -intf-suffix .ml -no-alias-deps -opaque -o exercises/4-length-list/.main.eobjs/native/dune__exe__Main.cmx -c -impl exercises/4-length-list/main.ml)
-> File "exercises/4-length-list/main.ml", line 1, characters 4-10:
-> 1 | let length list =
->         ^^^^^^
-> Error (warning 32 [unused-value-declaration]): unused value length.
-[2]
-$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I exercises/5-reverse-a-list/.main.eobjs/byte -I exercises/5-reverse-a-list/.main.eobjs/native -I lib/.OCamlexe.objs/byte -I lib/.OCamlexe.objs/native -intf-suffix .ml -no-alias-deps -opaque -o exercises/5-reverse-a-list/.main.eobjs/native/dune__exe__Main.cmx -c -impl exercises/5-reverse-a-list/main.ml)
-> File "exercises/5-reverse-a-list/main.ml", line 1, characters 4-7:
-> 1 | let rev list = 
->         ^^^
-> Error (warning 32 [unused-value-declaration]): unused value rev.
-[2]
-$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I exercises/3-N-of-the-list/.main.eobjs/byte -I exercises/3-N-of-the-list/.main.eobjs/native -I lib/.OCamlexe.objs/byte -I lib/.OCamlexe.objs/native -intf-suffix .ml -no-alias-deps -opaque -o exercises/3-N-of-the-list/.main.eobjs/native/dune__exe__Main.cmx -c -impl exercises/3-N-of-the-list/main.ml)
-> File "exercises/3-N-of-the-list/main.ml", line 1, characters 8-10:
-> 1 | let rec at k = function
->             ^^
-> Error (warning 32 [unused-value-declaration]): unused value at.
-[2]
-$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I exercises/8-modified-length-encoding/.main.eobjs/byte -I exercises/8-modified-length-encoding/.main.eobjs/native -I lib/.OCamlexe.objs/byte -I lib/.OCamlexe.objs/native -intf-suffix .ml -no-alias-deps -opaque -o exercises/8-modified-length-encoding/.main.eobjs/native/dune__exe__Main.cmx -c -impl exercises/8-modified-length-encoding/main.ml)
-> File "exercises/8-modified-length-encoding/main.ml", line 5, characters 4-10:
-> 5 | let encode l = 
->         ^^^^^^
-> Error (warning 32 [unused-value-declaration]): unused value encode.
-[2]
-$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I exercises/7-run-length-encoding/.main.eobjs/byte -I exercises/7-run-length-encoding/.main.eobjs/native -I lib/.OCamlexe.objs/byte -I lib/.OCamlexe.objs/native -intf-suffix .ml -no-alias-deps -opaque -o exercises/7-run-length-encoding/.main.eobjs/native/dune__exe__Main.cmx -c -impl exercises/7-run-length-encoding/main.ml)
-> File "exercises/7-run-length-encoding/main.ml", line 1, characters 4-10:
-> 1 | let encode list =
->         ^^^^^^
-> Error (warning 32 [unused-value-declaration]): unused value encode.
-[2]
-$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o exercises/9-duplicate-elements-of-a-list/main.exe lib/OCamlexe.cmxa exercises/9-duplicate-elements-of-a-list/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/lasttwo.exe lib/OCamlexe.cmxa bin/.main.eobjs/native/dune__exe.cmx bin/.main.eobjs/native/dune__exe__Lasttwo.cmx)
+$ (cd _build/default && /home/w/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/OCamlexe.cmxa bin/.main.eobjs/native/dune__exe.cmx bin/.main.eobjs/native/dune__exe__Main.cmx)

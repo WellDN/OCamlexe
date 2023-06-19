@@ -1,4 +1,4 @@
-(executable
- (public_name OCamlexe)
- (name main)
- (libraries OCamlexe))
+(executables
+  (public_names OCamlexe lasttwo insert listprimes)
+  (names main lasttwo insert listprimes)
+  (libraries OCamlexe))
